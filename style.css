@@ -4,8 +4,8 @@ body{
 }
 h1{
   text-align : center;
-  border-bottom: 1px dotted DarkOrchid;
   margin: 0px ; padding: 20px;
+  margin-bottom: 10px;
 }
 ol{
   padding: 0px;
@@ -14,7 +14,6 @@ ol{
   width : 181px;
 }
 li{
-  border-right: 1px dotted DarkOrchid;
   width : 100px;
   margin: 0; padding : 40px;
   font-size: 25px;
@@ -28,6 +27,7 @@ a{
 #grid{
   display: grid;
   grid-template-columns: 181px 1fr;
+
 }
 #grid #movie{
   text-align: center;
