@@ -9,29 +9,45 @@
   <h1><a href="main.html"> I want to do everything well.</a></h1>
   <div id="grid">
     <ol>
-      <li><a href="english.html"> English </a></li>
+      <li><a href="#!English" onclick="fetchPage('english')">English</a></li>
       <li> Health</li>
-      <li><a href="coding.html"> Coding</a></li>
-      <li > Soccer
-      <li class="naming"><a href="kim.html">
-         &nbsp&nbsp . Kim
-       </a>
-      </li>
-      <li class="naming"><a href="koo.html">
-         &nbsp&nbsp . Koo
-         </a>
-      </li>
-      <li class="naming"><a href="lee.html">
-         &nbsp&nbsp . Lee
-         </a>
-      </li>
+      <li><a href="#!Coding" onclick="fetchPage('coding')"> Coding</a></li>
+      <li><a href="soccer.html"> Soccer</a></li>
+        <ol>
+          <li>
+            <a href="#!kim" onclick="fetchPage('kim')">
+             &nbsp&nbsp . Kim
+             </a>
+          </li>
+          <li>
+            <a href="#!koo" onclick="fetchPage('koo')">
+             &nbsp&nbsp . Koo
+             </a>
+          </li>
+          <li>
+            <a href="#!lee" onclick="fetchPage('lee')">
+             &nbsp&nbsp . Lee
+             </a>
+          </li>
+      </ol>
       </li>
     </ol>
     <div id="movie">
-      <a href="kim.html"><img src="main.jpg" width="240px" height="450px"></a>
-      <a href="koo.html"><img src="main.jpg" width="240px" height="450px"></a>
-      <a href="lee.html"><img src="lee.jpg" width="240px" height="450px"></a>
-    </div>
+      <article>
+          <a href="#!kim" onclick="fetchPage('kim')"><img src="main.jpg" width="240px" height="450px"></a>
+          <a href="#!koo" onclick="fetchPage('koo')"><img src="main.jpg" width="240px" height="450px"></a>
+          <a href="#!lee" onclick="fetchPage('lee')"><img src="lee.jpg" width="240px" height="450px"></a>
+      </article>
+      <script>
+      function fetchPage(name){
+        fetch(name).then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML = text;
+          })
+        });
+      }
+      </script>
+      </div>
   </div>
 </body>
 </html>
