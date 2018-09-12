@@ -1,5 +1,5 @@
 <div id="movie">
-  <video width="573" height="387" controls>
+  <video width="573" height="387" controls frameborder="0" allowfullscreen>
     <source src="koo1.mp4" type="video/mp4">
   </video>
 </div>
