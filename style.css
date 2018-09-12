@@ -26,9 +26,6 @@ a{
   color : WHITE ;
   text-decoration: none;
 }
-img{
-
-}
 #grid{
   display: grid;
   grid-template-columns: 181px 1fr;
