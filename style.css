@@ -1,6 +1,9 @@
 body{
   text-align: center;
   margin: 0px;
+  color : WHITE ;
+  background-image: url("bg.jpg");
+  background-size: auto;
 }
 h1{
   text-align : center;
@@ -21,8 +24,11 @@ li{
   list-style: none;
 }
 a{
-  color : black ;
+  color : WHITE ;
   text-decoration: none;
+}
+img{
+
 }
 #grid{
   display: grid;
